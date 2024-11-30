@@ -1,0 +1,104 @@
+body {
+  font-family: 'CircularStd', sans-serif;
+  background-color: #FFFBEB;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 100dvh;
+  letter-spacing: 0.00000000000001px;
+  line-height: 32px;
+  position: relative;
+}
+
+.left-side {
+  padding: 20px;
+  background-color: #FFFBEB;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-side .div-infos {
+  margin-left: 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 26px;
+  color: #657B79;
+  margin-bottom: 20px;
+  font-weight: 500;
+  width: 35%;
+}
+
+.picture {
+  position: absolute;
+  top: 554px;
+  left: 711px;
+  width: 660px;
+  height: auto;
+  z-index: 1;
+}
+
+.right-side {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+}
+
+.right-side .div-infos {
+  margin-top: 50px;
+}
+
+.right-side h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #BC560A;
+  margin-bottom: 10px;
+}
+
+.right-side p {
+  font-size: 16px;
+  color: #657B79;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #BC560A;
+  padding: 10px 20px;
+  border: solid 1px #FEF3C7;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.google-btn:hover {
+  background-color: #fef3c73f;
+}
+
+.google-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 20px;
+}

@@ -1,0 +1,38 @@
+<nav class="navbar">
+  <div class="logo">
+      <img src="/assets/icons/logo.svg" alt="Logo do Sistema" />
+  </div>
+
+  <div class="nav-buttons">
+      <button class="nav-button" 
+              [routerLink]="['/home']" 
+              routerLinkActive="active" 
+              [routerLinkActiveOptions]="{exact: true}">
+          <img [src]="isActive('/home') ? '/assets/icons/home-fill.svg' : '/assets/icons/home.svg'" alt="Home" />
+          Home
+      </button>
+      
+      <button class="nav-button" 
+              [routerLink]="['/salvo']" 
+              routerLinkActive="active" 
+              [routerLinkActiveOptions]="{exact: true}">
+          <img [src]="isActive('/salvo') ? '/assets/icons/salvo-fill.svg' : '/assets/icons/salvo.svg'" alt="Salvos" />
+          Salvos
+      </button>
+      
+      <button class="nav-button" 
+              [routerLink]="['/later']" 
+              routerLinkActive="active" 
+              [routerLinkActiveOptions]="{exact: true}">
+          <img [src]="isActive('/later') ? '/assets/icons/later-fill.svg' : '/assets/icons/later.svg'" alt="Assistir mais tarde" />
+          Assistir Mais Tarde
+      </button>
+  </div>
+
+  <div class="logout">
+      <button class="nav-button logout" (click)="logout()">
+          <img src="/assets/icons/sair.svg" alt="Sair" />
+          Sair
+      </button>
+  </div>
+</nav>
