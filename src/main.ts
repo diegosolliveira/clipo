@@ -5,6 +5,7 @@ import { AppComponent } from './app/app.component';
 import { LoginComponent } from './app/login/login.component';
 import { HomeComponent } from './app/home/home.component';
 import { SalvoComponent } from './app/salvo/salvo.component'; 
+import { VisualizerComponent } from './app/visualizer/visualizer.component';
 
 bootstrapApplication(AppComponent, {
   providers: [
@@ -14,6 +15,7 @@ bootstrapApplication(AppComponent, {
       { path: 'home', component: HomeComponent },
       { path: 'salvo', component: SalvoComponent },
       { path: 'later', component: LaterComponent }, 
+      { path: 'visualizer', component: VisualizerComponent }, 
     ])
   ]
 });

@@ -7,6 +7,8 @@ body {
   letter-spacing: 0.00000000000001px;
   line-height: 32px;
   position: relative;
+  padding: 0rem;
+  margin: 0rem;
 }
 
 .left-side {

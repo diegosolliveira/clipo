@@ -1,0 +1,21 @@
+<div class="page-content">
+    <div class="video-container">
+        <div class="div-infos">
+            <video controls>
+                <source src="" type="video/mp4">
+                Seu navegador não suporta este vídeo.
+            </video>
+
+            <h1>{{ videoDetails.title }}</h1>
+            <h2>{{ videoDetails.artist }}</h2>
+            <div class="video-infos">
+                <div class="video-details">
+                    <p>{{ videoDetails.visualizacoes }}</p>
+                    <p class="circle">●</p>
+                    <p>{{ videoDetails.year }}</p>
+                </div>
+                <p>{{ videoDetails.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
