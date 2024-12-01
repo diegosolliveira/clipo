@@ -1,10 +1,9 @@
 <div class="page-content">
     <div class="video-container">
         <div class="div-infos">
-            <video controls>
-                <source src="" type="video/mp4">
-                Seu navegador não suporta este vídeo.
-            </video>
+            <iframe [src]="safeUrl" width="560" height="315" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
 
             <div class="video-title">
                 <div>
@@ -14,17 +13,17 @@
 
                 <div class="card-buttons">
                     <button class="btn like">
-                        <img src="/assets/icons/salvo.svg" alt="">
+                        <img src="/assets/icons/salvo.svg" alt="salvo">
                     </button>
                     <button class="btn later">
-                        <img src="/assets/icons/later.svg" alt="">
+                        <img src="/assets/icons/later.svg" alt="mais tarde">
                     </button>
                 </div>
             </div>
 
             <div class="video-infos">
                 <div class="video-details">
-                    <p>{{ videoDetails.visualizacoes }}</p>
+                    <p>{{ videoDetails.visualizacoes }} visualizações</p>
                     <p class="circle">●</p>
                     <p>{{ videoDetails.year }}</p>
                 </div>
