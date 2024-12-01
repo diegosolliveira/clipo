@@ -6,8 +6,22 @@
                 Seu navegador não suporta este vídeo.
             </video>
 
-            <h1>{{ videoDetails.title }}</h1>
-            <h2>{{ videoDetails.artist }}</h2>
+            <div class="video-title">
+                <div>
+                    <h1>{{ videoDetails.title }}</h1>
+                    <h2>{{ videoDetails.artist }}</h2>
+                </div>
+
+                <div class="card-buttons">
+                    <button class="btn like">
+                        <img src="/assets/icons/salvo.svg" alt="">
+                    </button>
+                    <button class="btn later">
+                        <img src="/assets/icons/later.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
             <div class="video-infos">
                 <div class="video-details">
                     <p>{{ videoDetails.visualizacoes }}</p>
