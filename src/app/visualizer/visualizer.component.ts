@@ -22,9 +22,10 @@ export class VisualizerComponent implements OnInit {
   }
 
   loadVideoDetails(id: string): void {
-    this.http.get<any[]>(`http://localhost:3000/videos`).subscribe({
+    this.http.get<any[]>('http://localhost:3000/videos').subscribe({
       next: (data) => {
         this.videoDetails = data.find(video => video.id === Number(id));
+        
         if (this.videoDetails) {
           const videoEmbedUrl = this.convertToEmbedUrl(this.videoDetails.url);
           this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(videoEmbedUrl);
